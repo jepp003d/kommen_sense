@@ -32,11 +32,8 @@ body {
     position: fixed;
 }
 
-iframe {
-
-
-
-    margin: 0;
+video {
+    width: 100%
 }
 
 h1 {
