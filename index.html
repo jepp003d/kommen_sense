@@ -8,40 +8,61 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
 
 
-    <section class="bg-img-wrapper">
-        <div class="container">
-            <img class="logo img-fluid mt-3" src="Logo.png" alt="">
-        </div>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+            <div class="container">
+
+                <a class="navbar-brand" href="#header"><a href="#hero"><img class="navlogo" src="Logo.png"></a></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
+                    <div class="navbar-nav ">
+
+                        <a class="nav-link ml-lg-5" href="#konkurrence">Konkurrence</a>
+                        <a class="nav-link" href="#nyhed">Nyhedsbrev</a>
+
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <section id="hero" class="bg-img-wrapper">
+
         <div class="container pb-lg-5 pt-lg-5">
             <div class="row">
-                <img class="img-fluid col-12 col-md-8 offset-md-2 pb-lg-5 mb-5 pt-5 align-self-center" src="eventyrlig_smag.png" alt="">
+                <img class="img-fluid col-12 col-md-8 offset-md-2 pb-lg-5 mb-5 pt-5 align-self-center rellax" data-rellax-speed="2" src="eventyrlig_smag.png" alt="">
             </div>
         </div>
     </section>
 
-    <section class="bg-img-wrapper_1">
+    <section class="bg-img-wrapper_1 parallax ">
         <div class="container px-lg-5 d-flex">
             <div class="row row-cols-xl-2 row-cols-lg-2 row-cols-md-2 py-5 d-flex align-items-start">
-                <div class="">
+                <div class="left text-animation-left-1">
                     <h1 class="heading">KENDER DU <br>TYPEN</h1>
                     <p class="copy">Føler du dig eventyrlysten, men ikke helt på samme niveau som Rambo? Er du energisk, dog uden at være hyperaktiv? Er du moderne, men ikke i stiletter?<br><br>Kommen Sense er for dig der er aktiv. For dig der går op i mad og sundhed. For dig der tager ungerne med i skoven og sover i bivuak. Det er for dig der drømmer og længes efter eventyr i din hverdag.</p>
                 </div>
-                <img class="img-fluid" src="guy_ost.png" alt="">
+                <img class="img-fluid img-animation-right-1" src="guy_ost.png" alt="">
             </div>
         </div>
     </section>
 
-    <section class="bg-img-wrapper_1">
+    <section class="bg-img-wrapper_1 parallax right">
         <div class="container px-lg-5 d-flex">
             <div class="row row-cols-xl-2 row-cols-lg-2 row-cols-md-2 py-5  d-flex align-items-start flex-row-reverse">
-                <div class="">
+                <div class="text-animation-right-1">
                     <h1 class="heading">KOMMEN<br> SENSE</h1>
                     <p class="copy">Kommen Sense er et naturligt valg, hvis du ønsker mere energi og overskud i hverdagen. Den har en mild lugt og smag, og så er kommen fyldt med proteiner og vitaminer og er derfor den perfekte topping til den madpakke, du tager med i naturen, når du skal ud og lade batterierne op. Osten fås i en blok på 1 kg og så er den FSC-certificeret guldinpakket: Så er det altid et eventyr at åbne køleskabet.</p>
                     <button type="button" class="btn btn-success btn-lg mb-4">Se forhandlere</button>
@@ -71,36 +92,20 @@
         </div>
     </section>
 
-    <section class="bg-img-wrapper">
-        <div class="container pb-5 pt-5 px-lg-5">
-            <h1 class="heading">I SKOVEN ELLER<br> DERHJEMME</h1>
-            <div class="row">
-                <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-                    <source src="video.mp4" type="video/mp4">
-                </video>
-            </div>
-        </div>
-    </section>
 
-    <section class="bg-img-wrapper_1">
+
+    <section class="bg-img-wrapper_1 parallax text-animation">
         <div class="container px-lg-5 d-flex">
-            <div class="row row-cols-xl-2 row-cols-lg-2 row-cols-md-2 py-5  d-flex align-items-start flex-row-reverse">
-                <div class="">
-                    <h1 class="heading">MEN, HVOFRFOR<br> KOMMEN?</h1>
+            <div class="row row-cols-md-2 py-5  d-flex align-items-start">
+                <div class="left text-animation-left-2">
+                    <h1 class="heading">MEN, HVORFOR<br> KOMMEN?</h1>
                     <p class="copy">Fordi det er sundt! Kommen er blevet brugt siden middelalderen til at befordre fordøjelsen og appetitten og som middel mod kolik hos børn. Det hjælper på hoved- og tandpine og dårlige ånde.Og så smager det altså fantastisk! Også selvom folk vil rynke på næsen af dig, når du fortæller at du har tænkt dig at prøve den nye Kommen Sense. Men tænk du ikke på hvad andre synes. Kommenost er tilbage!</p>
-
                 </div>
-
-                <!--     TIL LASSE VIDEO - FORSKELLIGE TESTS. BEGGE FUCKER OP PÅ MOBILEN. PAGES LINK JEG HAR SENDT TIL DIG ER DEN AKTIVE KODE NEDEUNDER           -->
-
-                <!--
-                <div class="ratio ratio-1x1">
-                    <iframe src="baggrund.mp4" allowfullscreen></iframe>
-                </div>
--->
                 <div>
-                    <div class="embed-responsive embed-responsive-1by1">
-                        <iframe autoplay="autoplay" class="embed-responsive-item" src="baggrund.mp4"></iframe>
+                    <div class="embed-responsive embed-responsive-1by1 img-animation-right-2">
+                        <video controls autoplay width="800" height="800">
+                            <source src="baggrund.mp4" type="video/mp4">
+                        </video>
                     </div>
                 </div>
             </div>
@@ -110,10 +115,10 @@
 
 
 
-    <section class="bg-img-wrapper_1">
+    <section id="konkurrence" class="bg-img-wrapper_1 parallax right">
         <div class="container px-lg-5 d-flex">
-            <div class="row row-cols-xl-2 row-cols-lg-2 row-cols-md-2 py-5 d-flex align-items-start ">
-                <div class="">
+            <div class="row row-cols-xl-2 row-cols-lg-2 row-cols-md-2 py-5 d-flex align-items-start flex-row-reverse ">
+                <div class="text-animation-right-2">
                     <h1 class="heading">VIND ET <br>EVENTYR</h1>
                     <p class="copy">Alle gør det samme. Alt ligner det samme. Alt føles som det samme. Alt smager af det samme. Alle længes, men gør ikke noget. Ingen tør noget. Tør du?
 
@@ -121,7 +126,7 @@
                     </p>
                 </div>
                 <div class="">
-                    <img class="img-fluid" src="guy_ost.png" alt="">
+                    <img class="img-fluid" src="Konkurrence.png" alt="">
 
                 </div>
 
@@ -134,20 +139,20 @@
         <div class="container px-lg-5 d-flex pb-5 ">
 
             <div class="row row-cols-6 flex-nowrap overflow_feed">
-                <img class="feed" src="insta/Insta1.png" alt="">
-                <img class="feed" src="insta/Insta2.png" alt="">
-                <img class="feed" src="insta/Insta3.png" alt="">
-                <img class="feed" src="insta/Insta4.png" alt="">
-                <img class="feed" src="insta/Insta5.png" alt="">
-                <img class="feed" src="insta/Insta6.png" alt="">
+                <img class="feed img-fluid align-self-center" src="insta/Insta1.png" alt="">
+                <img class="feed img-fluid align-self-center" src="insta/Insta2.png" alt="">
+                <img class="feed img-fluid align-self-center" src="insta/Insta3.png" alt="">
+                <img class="feed img-fluid align-self-center" src="insta/Insta4.png" alt="">
+                <img class="feed img-fluid align-self-center" src="insta/Insta5.png" alt="">
+                <img class="feed img-fluid align-self-center" src="insta/Insta6.png" alt="">
             </div>
         </div>
     </section>
 
-    <section class="bg-img-wrapper_3">
+    <section id="nyhed" class="bg-img-wrapper_3 parallax left">
         <div class="container px-lg-5 d-flex">
-            <div class="row row-cols-xl-2 row-cols-lg-2 row-cols-md-2 py-5  d-flex align-items-start flex-row-reverse">
-                <div class="">
+            <div class="row row-cols-xl-2 row-cols-lg-2 row-cols-md-2 py-5  d-flex align-items-start">
+                <div class="text-animation-left-3">
                     <h1 class="heading">HOW TO...<br> NYHEDSBREV</h1>
                     <p class="copy">Hvis du vil have inspiration til hvordan du sætter en vild bivuak op nemt og hurtigt, eller ideer til madpakker på dine eventyr, kan du skrive dig op til vores nyhedsbrev og få tips og tricks tilsendt.</p>
                     <form>
@@ -159,14 +164,14 @@
                         </div>
                         <div class="form-group row">
                             <div class="col-sm-10">
-                                <button type="submit" class="btn btn-primary mt-4">Sign up</button>
+                                <button type="submit" class="btn btn-primary mt-4 mb-4">Sign up</button>
                             </div>
                         </div>
                     </form>
                 </div>
 
                 <div class="">
-                    <img class="img-fluid" src="Bivuak.png" alt="">
+                    <img class="img-fluid img-animation-right-3" src="Bivuak.png" alt="">
                 </div>
 
             </div>
@@ -206,13 +211,31 @@
     </footer>
 -->
 
-    <footer class="">
-        <div class="container text-center">
+    <footer>
+        <div class="container px-lg-5 footer_bg py-5 container text-center">
             <div class="row">
-                <div class="col-3">
-                    <p>PRIVACY POLICY</p>
-                    <p>KONTAKT</p>
+                <div class="">
+
                     <p>FORHANDLERE</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="">
+                    <p>KONTAKT</p>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="">
+                    <p>PRIVACY POLICY</p>
+
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="">
+                    <img class="insta" src="Instagram.svg" alt="">
+                    <img src="facebook.svg" alt="">
+
                 </div>
             </div>
         </div>
@@ -233,5 +256,169 @@
 
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+    <script src="gsap.min.js"></script>
+    <script src="ScrollTrigger.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js"></script>
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+
+        var rellax = new Rellax(".rellax", {
+            center: true,
+        });
+
+        //        const sections = document.querySelectorAll("section");
+        //        sections.forEach((section) => {
+        //            const left = section.querySelectorAll(".left");
+        //
+        //            gsap.from(left, {
+        //                x: -200,
+        //                duration: 1,
+        //                scrollTrigger: {
+        //                    trigger: ".text-animation",
+        //                    ease: "power2.inOut",
+        //                    markers: true,
+        //                    stagger: "1",
+        //                    start: "top 100%",
+        //                    end: "center 60%",
+        //                    scrub: true,
+        //
+        //                }
+        //            });
+        //        });
+
+
+
+        gsap.from(".text-animation-left-1", {
+            x: -200,
+            opacity: 0,
+            duration: 1,
+
+            scrollTrigger: {
+                trigger: ".text-animation-left-1",
+                ease: "power2.inOut",
+                markers: true,
+
+                start: "top 100%",
+                end: "center 40%",
+                scrub: true,
+
+            }
+        });
+
+        gsap.from(".img-animation-right-1", {
+            x: 200,
+            opacity: 0,
+            duration: 1,
+            scrollTrigger: {
+                trigger: ".text-animation-left-1",
+                ease: "power2.inOut",
+                markers: true,
+
+                start: "top 100%",
+                end: "center 40%",
+                scrub: true,
+
+            }
+        });
+
+        gsap.from(".img-animation-right-2", {
+            x: 200,
+            opacity: 0,
+            duration: 1,
+            scrollTrigger: {
+                trigger: ".text-animation-left-2",
+                ease: "power2.inOut",
+                markers: true,
+
+                start: "top 100%",
+                end: "center 40%",
+                scrub: true,
+
+            }
+        });
+
+        gsap.from(".img-animation-right-3", {
+            x: 200,
+            opacity: 0,
+            duration: 1,
+            scrollTrigger: {
+                trigger: ".text-animation-left-3",
+                ease: "power2.inOut",
+                markers: true,
+
+                start: "top 100%",
+                end: "center 40%",
+                scrub: true,
+
+            }
+        });
+
+
+
+        gsap.from(".text-animation-left-2", {
+            x: -200,
+            opacity: 0,
+            duration: 1,
+            scrollTrigger: {
+                trigger: ".text-animation-left-2",
+                ease: "power2.inOut",
+                markers: true,
+
+                start: "top 100%",
+                end: "center 40%",
+                scrub: true,
+
+            }
+        });
+
+        gsap.from(".text-animation-left-3", {
+            x: -200,
+            opacity: 0,
+            duration: 1,
+            scrollTrigger: {
+                trigger: ".text-animation-left-3",
+                ease: "power2.inOut",
+                markers: true,
+
+                start: "top 100%",
+                end: "center 40%",
+                scrub: true,
+
+            }
+        });
+
+        gsap.from(".text-animation-right-1", {
+            x: 200,
+            opacity: 0,
+            duration: 1,
+            scrollTrigger: {
+                trigger: ".text-animation-right-1",
+                ease: "power2.inOut",
+                markers: true,
+
+                start: "top 100%",
+                end: "center 40%",
+                scrub: true,
+
+            }
+        });
+
+        gsap.from(".text-animation-right-2", {
+            x: 200,
+            opacity: 0,
+            duration: 1,
+            scrollTrigger: {
+                trigger: ".text-animation-right-2",
+                ease: "power2.inOut",
+                markers: true,
+
+                start: "top 100%",
+                end: "center 40%",
+                scrub: true,
+
+            }
+        });
+    </script>
     <!--    <script src="js/scripts.js"></script>-->
 </body></html>
