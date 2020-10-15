@@ -8,11 +8,18 @@ body {
 
 .bg-img-wrapper {
     background-image: url(1.bg.png);
-    background-position: 100% 25%;
+
     background-repeat: no-repeat;
     background-clip: padding-box;
     background-size: cover;
 }
+
+
+
+
+
+
+
 
 .bg-img-wrapper_1 {
     background-image: url(mountain_2.png);
